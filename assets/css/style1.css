@@ -49,8 +49,7 @@ h2 {margin: 0;}
 */
 h2{
     color:#6d4c41 ;
-    font-size: small;
-    text-transform: uppercase;
+   font-variant: small-caps;
 }
 
 
