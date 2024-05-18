@@ -1,16 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald");
 
 /* 
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
-body{
-    font-family: Oswald;
-    font-size: 14px;
+body {
+  font-family: Oswald;
+  font-size: 14px;
 }
 
-nav {font-family: sans-serif; font-size: 10px;}
-#main {width: 900px; margin: 10px auto;}
+nav {
+    display: flex;
+  font-family: sans-serif;
+}
+
+nav h3 {
+  margin: 0 auto;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+#main {
+  width: 900px;
+  margin: 10px auto;
+}
 
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
@@ -18,27 +30,32 @@ nav {font-family: sans-serif; font-size: 10px;}
         - set the font size to 46px 
         - use a lighter weight font
 */
-h1{
-    font-family: Bungee Inline ;
-    font-size:46px ;
-    font-weight: lighter;
+h1 {
+  font-family: Bungee Inline;
+  font-size: 46px;
+  font-weight: lighter;
 }
 
+#menu {
+  columns: 420px 2;
+  column-gap: 60px;
+}
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+}
 
-#menu {columns: 420px 2; column-gap: 60px;}
-section {margin-bottom: 20px; padding: 10px;}
-
-h2 {margin-top: 0;}
+h2 {
+  margin-top: 0;
+}
 
 /* 
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
-h2{
-    text-transform: uppercase;
-
+h2 {
+  text-transform: uppercase;
 }
-
 
 /* 
      Update the following ruleset (dt) to accomplish the following:
@@ -46,40 +63,50 @@ h2{
         - set the font size to 16px
 */
 dt {
-    display: inline;
-    font-weight: bold;
-    font-size: 16px;
+  display: inline;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* 
     Add a CSS ruleset to accomplish the following:
     - Make a comma appear after the name of each menu item
 */
-.details:after{content: ",";}
+.details:after {
+  content: ",";
+}
 
+dd {
+  display: inline;
+  margin: 0;
+}
+dd::after {
+  content: " ";
+  display: block;
+  clear: both;
+  margin-bottom: 15px;
+}
 
-
-dd {display: inline; margin: 0;}
-dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
-
-.price {float: right; padding: 0 0 35px 20px;}
+.price {
+  float: right;
+  padding: 0 0 35px 20px;
+}
 
 /* 
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 
 */
-footer{
-    text-align: right;
+footer {
+  text-align: right;
 }
-
-
 
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
 */
 
-#starters, #desserts{
-    border: solid 2px black;
+#starters,
+#desserts {
+  border: solid 2px black;
 }

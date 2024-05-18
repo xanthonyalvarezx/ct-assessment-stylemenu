@@ -9,9 +9,9 @@
     <div id="main">
         <header>
                 <nav>
-                    Style:
-                    <a href="javascript:s1.disabled=false; s2.disabled=true;">One</a>
-                    <a href="javascript:s2.disabled=false; s1.disabled=true;">Two</a>
+                        <h2>  Style:</h2>
+                        <h3 id="style1" onclick="switchStyle(event)" data-style="one">Menu Style One</h3>
+                        <h3 id="style2"  onclick="switchStyle(event)" data-style="two">Menu Style Two</h3>
                 </nav>
                 <h1>Rossum's Universal Restaurant</h1>
         </header>
@@ -104,6 +104,9 @@
                 Open to the public on the 2nd Wednesday and 3rd Tuesday of every February, 11:30am-1:30pm.
             </address>
         </footer>
+
+       <script src="styleSwitch.js"></script>
     </div>
 </body>
+
 </html>
